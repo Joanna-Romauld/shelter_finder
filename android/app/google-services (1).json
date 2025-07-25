@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1032745495782",
+    "project_id": "shelterfinderapp-9b963",
+    "storage_bucket": "shelterfinderapp-9b963.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032745495782:android:0935e1ec6d7346e1a69f27",
+        "android_client_info": {
+          "package_name": "com.example.shelter_finder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGghoWygHkzpgsqWhu56qhazB_L9lu1kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
