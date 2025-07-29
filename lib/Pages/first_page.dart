@@ -6,14 +6,8 @@ import 'package:shelter_finder/Pages/second_page.dart';
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
 
- void buttonPressed(BuildContext context) {
-   // This function can be used to handle button presses
-   Navigator.push(context, 
-   MaterialPageRoute(
-    builder: (context) => SecondPage(),
-    ),
-    );
- }
+
+
 @override
  Widget build(BuildContext context){
     return MaterialApp(
@@ -21,15 +15,35 @@ class FirstPage extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 50, 137, 207),
         appBar: AppBar(
-          title: Text("Home Page"),
+          title: Text("1st Page"),
           backgroundColor: const Color.fromARGB(255, 102, 166, 219),
-          leading: Icon(Icons.menu),
           actions: [
             IconButton(
               onPressed: () {},
                icon: Icon(Icons.logout),
             ),
           ],
+          ),
+          drawer: Drawer(
+            backgroundColor: const Color.fromARGB(255, 102, 166, 219),
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.home),
+                  title: Text("Home"),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/first');
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.map),
+                  title: Text("Map"),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/second');
+                  },
+                ),
+              ],
+            ),
           ),
        body: SafeArea(
         child: Column(
@@ -67,7 +81,7 @@ class FirstPage extends StatelessWidget {
           Center(
             child: GestureDetector(
               onTap: (){
-                buttonPressed(context); 
+                Navigator.pushNamed(context, '/home'); 
               },
             child: Container(
               height: 50,

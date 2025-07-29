@@ -33,10 +33,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,19 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBdXs6fUbGPziNOVioIKJo6KtOcP1OMJ5A',
-    appId: '1:401625091667:android:4d738abf046d43544680a6',
-    messagingSenderId: '401625091667',
-    projectId: 'shelterfinderapp',
-    storageBucket: 'shelterfinderapp.firebasestorage.app',
+    apiKey: 'AIzaSyBGghoWygHkzpgsqWhu56qhazB_L9lu1kc',
+    appId: '1:1032745495782:android:0935e1ec6d7346e1a69f27',
+    messagingSenderId: '1032745495782',
+    projectId: 'shelterfinderapp-9b963',
+    storageBucket: 'shelterfinderapp-9b963.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDlgCmAGjQu7f4zDBlk0TpRZP30_2p43Hw',
-    appId: '1:401625091667:ios:d4bb4237ed8815794680a6',
-    messagingSenderId: '401625091667',
-    projectId: 'shelterfinderapp',
-    storageBucket: 'shelterfinderapp.firebasestorage.app',
+    apiKey: 'AIzaSyCXQQ_qeHqe3Xfr_q1aG2P7-oVab7PonyY',
+    appId: '1:1032745495782:ios:2415b6b9369d7340a69f27',
+    messagingSenderId: '1032745495782',
+    projectId: 'shelterfinderapp-9b963',
+    storageBucket: 'shelterfinderapp-9b963.firebasestorage.app',
     iosBundleId: 'com.example.shelterFinder',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyAinaj_DsQDvvAQq-6aL-J89nzKnw8E9L0',
+    appId: '1:1032745495782:web:11d3a5253576477ea69f27',
+    messagingSenderId: '1032745495782',
+    projectId: 'shelterfinderapp-9b963',
+    authDomain: 'shelterfinderapp-9b963.firebaseapp.com',
+    storageBucket: 'shelterfinderapp-9b963.firebasestorage.app',
+  );
+
 }
