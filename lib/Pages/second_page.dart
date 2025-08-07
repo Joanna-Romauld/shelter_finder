@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:shelter_finder/Read%20Data/get_shelter_name.dart';
 import 'package:shelter_finder/pages/first_page.dart';
 import 'package:shelter_finder/pages/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -32,7 +33,7 @@ class _SecondPageState extends State<SecondPage> {
         .collection('shelters')
         .get()
         .then((snapshot) => snapshot.docs.forEach((element){
-          print(element.reference);
+          // print(element.reference);
           shelterNames.add(element.reference.id);
         }),
         
@@ -54,7 +55,7 @@ class _SecondPageState extends State<SecondPage> {
                   itemCount: shelterNames.length,
                   itemBuilder: (context, index) {
                     return ListTile(
-                      title: Text(shelterNames[index]),
+                      title: GetShelterName(shelterId: shelterNames[index]),
                       );
                 }
                 );
