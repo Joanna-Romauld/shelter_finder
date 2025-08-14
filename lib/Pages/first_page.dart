@@ -39,7 +39,7 @@ class FirstPage extends StatelessWidget {
                   leading: Icon(Icons.map),
                   title: Text("Map"),
                   onTap: () {
-                    Navigator.pushNamed(context, '/second');
+                    Navigator.pushNamed(context, '/mapPage');
                   },
                 ),
               ],

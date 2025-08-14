@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shelter_finder/Pages/map_page.dart';
 import 'package:shelter_finder/pages/first_page.dart';
 import 'package:shelter_finder/pages/second_page.dart';
 import 'package:shelter_finder/pages/home_page.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/first': (context) => FirstPage(),
         '/second': (context) => SecondPage(),
         '/home': (context) => HomePage(),
+        '/mapPage': (context) => MapPage()
       },
     );
  }

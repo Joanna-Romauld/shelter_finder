@@ -6,6 +6,7 @@ import 'package:shelter_finder/pages/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:shelter_finder/firebase_options.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_map/flutter_map.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -96,7 +97,7 @@ class _SecondPageState extends State<SecondPage> {
                   leading: Icon(Icons.map),
                   title: Text("Map"),
                   onTap: () {
-                    Navigator.pushNamed(context, '/second');
+                    Navigator.pushNamed(context, '/mapPage');
                   },
                 ),
                 
