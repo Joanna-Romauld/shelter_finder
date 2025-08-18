@@ -21,7 +21,8 @@ class GetShelterName extends StatelessWidget {
       if (snapshot.connectionState == ConnectionState.done) {
         Map<String, dynamic> data = 
         snapshot.data!.data() as Map<String, dynamic>;
-        return Text('Shelter name: ${data['name']}');
+        return Text('${data['latitude']}, ${data['longitude']}');
+      
       }
       return Text("Loading...");
       }
