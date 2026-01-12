@@ -1,16 +1,14 @@
-# shelter_finder
+# Shelter Finder
 
-A new Flutter project.
+Shelter Finder is a work-in-progress mobile app designed to help individuals locate nearby homeless shelters and essential resources more easily and efficiently.
+## Project Goals
+- Display nearby homeless shelters on an interactive map
+- Make shelter information easy to access and navigate
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+The app is built using:
+- **Flutter & Dart** for mobile development
+- **Firebase** for handling shelter data
+- **OpenStreetMap API** for map visualization and navigation
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
